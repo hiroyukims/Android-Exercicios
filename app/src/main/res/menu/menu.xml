@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:id="@+id/file"
+        android:title="Lista de exercícios" >
+
+            <item android:id="@+id/exercicio1"
+                android:title="Exercício 1" />
+            <item android:id="@+id/exercicio2"
+                android:title="Exercício 2" />
+        <item android:id="@+id/exercicio3"
+            android:title="Exercício 3" />
+    </item>
+
+</menu>

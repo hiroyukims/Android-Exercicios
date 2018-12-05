@@ -4,6 +4,9 @@ import android.content.Context;
 import android.content.Intent;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
+import android.view.Menu;
+import android.view.MenuInflater;
+import android.view.MenuItem;
 import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
@@ -16,28 +19,43 @@ public class MainActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 
-        final EditText Nome = (EditText) findViewById(R.id.editTextNome);
-        final EditText Ru = (EditText) findViewById(R.id.editTextRu);
-        final EditText Curso = (EditText) findViewById(R.id.editTextCurso);
-
-
-
-        Button btnEnvia = (Button) findViewById(R.id.btnEnvia);
-        btnEnvia.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                Bundle bundle = new Bundle();
-                String dataEnvia = Nome.getText().toString() +", "+ Ru.getText().toString() +", "+ Curso.getText().toString();
-                bundle.putString("informacao", dataEnvia);
-                Intent intent = new Intent(getBaseContext(), Pagina2Activity.class);
-                intent.putExtras(bundle);
-                startActivity(intent);
-            }
-        });
-
 
     }
 
+
+
+    @Override
+    public boolean onOptionsItemSelected(MenuItem item) {
+        // Handle item selection
+        switch (item.getItemId()) {
+            case R.id.exercicio1:
+                Intent paginaExercicio1 = new Intent(getBaseContext(), Exercicio1.class);
+                startActivity(paginaExercicio1);
+                return true;
+
+            case R.id.exercicio2:
+
+                Intent paginaExercicio2 = new Intent(getBaseContext(), Exercicio2.class);
+                startActivity(paginaExercicio2);
+                return true;
+
+            case R.id.exercicio3:
+
+                Intent paginaExercicio3 = new Intent(getBaseContext(), Exercicio3.class);
+                startActivity(paginaExercicio3);
+                return true;
+
+            default:
+                return super.onOptionsItemSelected(item);
+        }
+    }
+
+    @Override
+    public boolean onCreateOptionsMenu(Menu menu) {
+        MenuInflater inflater = getMenuInflater();
+        inflater.inflate(R.menu.menu, menu);
+        return true;
+    }
 
 
 
