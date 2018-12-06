@@ -19,7 +19,8 @@
         <activity android:name=".Exercicio2_pagina2" />
         <activity android:name=".Exercicio2" />
         <activity android:name=".Exercicio1" />
-        <activity android:name=".Exercicio3"></activity>
+        <activity android:name=".Exercicio3" />
+        <activity android:name=".Exercicio4"></activity>
     </application>
 
 </manifest>

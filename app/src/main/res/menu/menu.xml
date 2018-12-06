@@ -9,6 +9,8 @@
                 android:title="Exercício 2" />
         <item android:id="@+id/exercicio3"
             android:title="Exercício 3" />
+        <item android:id="@+id/exercicio4"
+            android:title="Exercício 4" />
     </item>
 
 </menu>

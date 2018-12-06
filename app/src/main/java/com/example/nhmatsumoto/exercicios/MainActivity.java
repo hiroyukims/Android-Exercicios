@@ -45,6 +45,12 @@ public class MainActivity extends AppCompatActivity {
                 startActivity(paginaExercicio3);
                 return true;
 
+            case R.id.exercicio4:
+
+                Intent paginaExercicio4 = new Intent(getBaseContext(), Exercicio4.class);
+                startActivity(paginaExercicio4);
+                return true;
+
             default:
                 return super.onOptionsItemSelected(item);
         }
