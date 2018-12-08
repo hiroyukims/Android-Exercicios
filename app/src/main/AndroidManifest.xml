@@ -23,7 +23,9 @@
         <activity android:name=".Exercicio4" />
         <activity android:name=".Calculadora" />
         <activity android:name=".Genius" />
-        <activity android:name=".GeniusGame"></activity>
+        <activity android:name=".GeniusGame" />
+        <activity android:name=".GeniusAluno" />
+        <activity android:name=".GeniusRanking"></activity>
     </application>
 
 </manifest>

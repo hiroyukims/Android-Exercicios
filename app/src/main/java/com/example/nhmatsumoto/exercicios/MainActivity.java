@@ -68,7 +68,11 @@ public class MainActivity extends AppCompatActivity {
                     case 4:
                         Intent prova1 = new Intent(getBaseContext(), Calculadora.class);
                         startActivity(prova1);
-                        break;
+                    break;
+                    case 5:
+                        Intent prova2 = new Intent(getBaseContext(), Genius.class);
+                        startActivity(prova2);
+                    break;
                 }
             }
         });
