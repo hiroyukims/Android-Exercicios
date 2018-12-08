@@ -19,7 +19,7 @@ public class Exercicio1 extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_exercicio1);
-
+        getSupportActionBar().setTitle("Exercício 01");
 
         Button btnRegistrar = (Button) findViewById(R.id.btnRegistrar);
 

@@ -12,7 +12,7 @@ public class Exercicio2_pagina2 extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_exercicio2_pagina2);
-
+        getSupportActionBar().setTitle("Exercício 02 página 02");
         Bundle extras = getIntent().getExtras();
         TextView textView = (TextView) findViewById(R.id.txtViewTela2);
 

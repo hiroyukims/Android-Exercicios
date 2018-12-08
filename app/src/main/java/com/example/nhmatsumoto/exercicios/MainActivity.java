@@ -25,30 +25,33 @@ public class MainActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
+        getSupportActionBar().setTitle("N.H.M");
 
         ListView listaExercicios = (ListView) findViewById(R.id.listaExercicios);
+        List<String> atividades = new ArrayList<String>();
+
+        atividades.add("Exercício 1");
+        atividades.add("Exercício 2");
+        atividades.add("Exercício 3");
+        atividades.add("Exercício 4");
+
+        atividades.add("Prova 01 - Calculadora");
+        atividades.add("Prova 02 - Genius");
 
 
 
-        List<String> exercicios = new ArrayList<String>();
-        exercicios.add("Exercício 1");
-        exercicios.add("Exercício 2");
-        exercicios.add("Exercício 3");
-        exercicios.add("Exercício 4");
-
-        ArrayAdapter<String> adapter = new ArrayAdapter<String>(this,android.R.layout.simple_list_item_1, exercicios);
+        ArrayAdapter<String> adapter = new ArrayAdapter<String>(this,android.R.layout.simple_list_item_1, atividades);
         listaExercicios.setAdapter(adapter);
-
-
 
         listaExercicios.setOnItemClickListener(new OnItemClickListener() {
             @Override
             public void onItemClick(AdapterView<?> parent, View view, int position, long id) {
 
-                switch (position + 1) {
+
+                switch (position) {
                     case 0:
                         Intent paginaExercicio1 = new Intent(getBaseContext(), Exercicio1.class);
-                        paginaExercicio1 = new Intent(getBaseContext(), Exercicio1.class);
+                        startActivity(paginaExercicio1);
                     break;
                     case 1:
                         Intent paginaExercicio2 = new Intent(getBaseContext(), Exercicio2.class);
@@ -62,54 +65,15 @@ public class MainActivity extends AppCompatActivity {
                         Intent paginaExercicio4 = new Intent(getBaseContext(), Exercicio4.class);
                         startActivity(paginaExercicio4);
                     break;
-
+                    case 4:
+                        Intent prova1 = new Intent(getBaseContext(), Calculadora.class);
+                        startActivity(prova1);
+                        break;
                 }
-
-
             }
         });
     }
 
-
-
-    @Override
-    public boolean onOptionsItemSelected(MenuItem item) {
-        // Handle item selection
-        switch (item.getItemId()) {
-            case R.id.exercicio1:
-                Intent paginaExercicio1 = new Intent(getBaseContext(), Exercicio1.class);
-                startActivity(paginaExercicio1);
-                return true;
-
-            case R.id.exercicio2:
-
-                Intent paginaExercicio2 = new Intent(getBaseContext(), Exercicio2.class);
-                startActivity(paginaExercicio2);
-                return true;
-
-            case R.id.exercicio3:
-
-                Intent paginaExercicio3 = new Intent(getBaseContext(), Exercicio3.class);
-                startActivity(paginaExercicio3);
-                return true;
-
-            case R.id.exercicio4:
-
-                Intent paginaExercicio4 = new Intent(getBaseContext(), Exercicio4.class);
-                startActivity(paginaExercicio4);
-                return true;
-
-            default:
-                return super.onOptionsItemSelected(item);
-        }
-    }
-
-    @Override
-    public boolean onCreateOptionsMenu(Menu menu) {
-        MenuInflater inflater = getMenuInflater();
-        inflater.inflate(R.menu.menu, menu);
-        return true;
-    }
 
 
 

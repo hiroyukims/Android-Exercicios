@@ -1,0 +1,13 @@
+package com.example.nhmatsumoto.exercicios;
+
+import android.support.v7.app.AppCompatActivity;
+import android.os.Bundle;
+
+public class GeniusGame extends AppCompatActivity {
+
+    @Override
+    protected void onCreate(Bundle savedInstanceState) {
+        super.onCreate(savedInstanceState);
+        setContentView(R.layout.activity_genius_game);
+    }
+}

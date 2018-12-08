@@ -16,7 +16,7 @@ public class Exercicio4 extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_exercicio4);
-
+        getSupportActionBar().setTitle("Exercício 04");
 
         Spinner dropdown = findViewById(R.id.dropProfissao);
 
