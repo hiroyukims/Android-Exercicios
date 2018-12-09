@@ -20,6 +20,7 @@
         <EditText
             android:id="@+id/txtNome"
             android:layout_width="match_parent"
+            android:inputType="text"
             android:layout_height="match_parent"/>
 
     </LinearLayout>
@@ -35,6 +36,7 @@
         <EditText
             android:id="@+id/txtRu"
             android:layout_width="match_parent"
+            android:inputType="number"
             android:layout_height="match_parent" />
     </LinearLayout>
 

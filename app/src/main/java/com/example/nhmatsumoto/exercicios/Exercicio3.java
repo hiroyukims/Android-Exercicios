@@ -16,6 +16,16 @@ import android.widget.TextView;
 
 public class Exercicio3 extends AppCompatActivity {
 
+    protected Button btnMostrarDados;
+    protected CheckBox ckBoxDEV;
+    protected CheckBox ckBoxINFRA;
+    protected CheckBox ckBoxGESTAO;
+    protected Spinner dropTempoExperiencia;
+    protected RadioGroup radioGroup;
+    protected EditText txtNome;
+    protected EditText txtTelefone;
+    protected EditText txtCpf;
+    protected TextView txtViewResultado;
 
 
     @Override
@@ -26,21 +36,37 @@ public class Exercicio3 extends AppCompatActivity {
         getSupportActionBar().setTitle("Exercício 03");
 
 
-        CheckBox ckBoxDEV = (CheckBox) findViewById(R.id.checkDev);
-        CheckBox ckBoxINFRA = (CheckBox) findViewById(R.id.checkInfra);
-        CheckBox ckBoxGESTAO = (CheckBox) findViewById(R.id.checkGestao);
-        Spinner dropdown = findViewById(R.id.dropTempoExperiencia);
-        RadioGroup radioGroup = (RadioGroup) findViewById(R.id.radioGroup);
-
-        EditText nome = (EditText) findViewById(R.id.editTextNome);
-        EditText telefone = (EditText) findViewById(R.id.editTextTelefone);
-        EditText cpf = (EditText) findViewById(R.id.editTextCpf);
-
+        ckBoxDEV = (CheckBox) findViewById(R.id.checkDev);
+        ckBoxINFRA = (CheckBox) findViewById(R.id.checkInfra);
+        ckBoxGESTAO = (CheckBox) findViewById(R.id.checkGestao);
+        dropTempoExperiencia = findViewById(R.id.dropTempoExperiencia);
+        radioGroup = (RadioGroup) findViewById(R.id.radioGroup);
+        txtNome = (EditText) findViewById(R.id.editTextNome);
+        txtTelefone = (EditText) findViewById(R.id.editTextTelefone);
+        txtCpf = (EditText) findViewById(R.id.editTextCpf);
+        btnMostrarDados = (Button) findViewById(R.id.btnMostrarDados);
 
         //Dropdown
         String[] items = new String[]{"1 ano", "Até 3 anos", "Até 6 anos"};
         ArrayAdapter<String> adapter = new ArrayAdapter<String>(this, android.R.layout.simple_spinner_dropdown_item, items);
-        dropdown.setAdapter(adapter);
+        dropTempoExperiencia.setAdapter(adapter);
+
+
+        btnMostrarDados.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+
+
+                String nome = txtNome.getText().toString();
+                String telefone = txtTelefone.getText().toString();
+                String cpf = txtCpf.getText().toString();
+
+                String experiencia = dropTempoExperiencia.getSelectedItem().toString();
+
+                txtViewResultado.setText(nome + telefone + cpf+ experiencia);
+            }
+        });
+
 
 
 
