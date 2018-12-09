@@ -25,7 +25,8 @@
         <activity android:name=".Genius" />
         <activity android:name=".GeniusGame" />
         <activity android:name=".GeniusAluno" />
-        <activity android:name=".GeniusRanking"></activity>
+        <activity android:name=".GeniusRanking" />
+        <activity android:name=".Camera"></activity>
     </application>
 
 </manifest>

@@ -20,10 +20,8 @@ public class Genius extends AppCompatActivity {
         btnJogar.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-
                 Intent IndentJogar = new Intent(getBaseContext(), GeniusGame.class);
                 startActivity(IndentJogar);
-
             }
         });
 
@@ -38,8 +36,6 @@ public class Genius extends AppCompatActivity {
 
             }
         });
-
-
 
     }
 
