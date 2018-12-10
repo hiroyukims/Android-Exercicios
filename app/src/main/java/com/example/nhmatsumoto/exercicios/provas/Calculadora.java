@@ -1,10 +1,12 @@
-package com.example.nhmatsumoto.exercicios;
+package com.example.nhmatsumoto.exercicios.provas;
 
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.Menu;
 import android.view.MenuInflater;
 import android.widget.Button;
+
+import com.example.nhmatsumoto.exercicios.R;
 
 public class Calculadora extends AppCompatActivity {
 

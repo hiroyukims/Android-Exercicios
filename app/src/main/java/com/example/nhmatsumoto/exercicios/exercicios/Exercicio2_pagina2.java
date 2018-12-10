@@ -1,8 +1,10 @@
-package com.example.nhmatsumoto.exercicios;
+package com.example.nhmatsumoto.exercicios.exercicios;
 
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.widget.TextView;
+
+import com.example.nhmatsumoto.exercicios.R;
 
 public class Exercicio2_pagina2 extends AppCompatActivity {
 

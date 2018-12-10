@@ -7,7 +7,7 @@
     android:paddingLeft="16dp"
     android:paddingRight="16dp"
     android:orientation="vertical"
-    tools:context=".Exercicio1">
+    tools:context=".exercicios.Exercicio1">
 
     <LinearLayout
         android:layout_width="match_parent"

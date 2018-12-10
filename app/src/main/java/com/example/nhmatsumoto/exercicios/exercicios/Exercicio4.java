@@ -1,4 +1,4 @@
-package com.example.nhmatsumoto.exercicios;
+package com.example.nhmatsumoto.exercicios.exercicios;
 
 import android.content.Context;
 import android.support.v7.app.AppCompatActivity;
@@ -9,6 +9,8 @@ import android.widget.Button;
 import android.widget.EditText;
 import android.widget.Spinner;
 import android.widget.Toast;
+
+import com.example.nhmatsumoto.exercicios.R;
 
 public class Exercicio4 extends AppCompatActivity {
 

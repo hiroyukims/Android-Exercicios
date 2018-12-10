@@ -1,4 +1,4 @@
-package com.example.nhmatsumoto.exercicios;
+package com.example.nhmatsumoto.exercicios.exercicios;
 
 import android.provider.MediaStore;
 import android.support.v7.app.AppCompatActivity;
@@ -13,6 +13,8 @@ import android.widget.RadioButton;
 import android.widget.RadioGroup;
 import android.widget.Spinner;
 import android.widget.TextView;
+
+import com.example.nhmatsumoto.exercicios.R;
 
 public class Exercicio3 extends AppCompatActivity {
 

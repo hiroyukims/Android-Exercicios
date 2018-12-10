@@ -1,19 +1,17 @@
-package com.example.nhmatsumoto.exercicios;
+package com.example.nhmatsumoto.exercicios.main;
 
-import android.content.Context;
 import android.content.Intent;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
-import android.view.Menu;
-import android.view.MenuInflater;
-import android.view.MenuItem;
 import android.view.View;
 import android.widget.AdapterView;
 import android.widget.AdapterView.OnItemClickListener;
 import android.widget.ArrayAdapter;
-import android.widget.Button;
-import android.widget.EditText;
 import android.widget.ListView;
+
+import com.example.nhmatsumoto.exercicios.R;
+import com.example.nhmatsumoto.exercicios.exercicios.*;
+import com.example.nhmatsumoto.exercicios.provas.*;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -25,7 +23,9 @@ public class MainActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
-        getSupportActionBar().setTitle("N.H.M");
+        getSupportActionBar().setTitle("Nilton H. Matsumoto");
+
+
 
         ListView listaExercicios = (ListView) findViewById(R.id.listaExercicios);
         List<String> atividades = new ArrayList<String>();
@@ -37,6 +37,8 @@ public class MainActivity extends AppCompatActivity {
 
         atividades.add("Prova 01 - Calculadora");
         atividades.add("Prova 02 - Genius");
+
+        atividades.add("CRUD Academico");
 
 
 
@@ -72,6 +74,10 @@ public class MainActivity extends AppCompatActivity {
                     case 5:
                         Intent prova2 = new Intent(getBaseContext(), Genius.class);
                         startActivity(prova2);
+                    break;
+                    case 6:
+                        Intent crudAcademico = new Intent(getBaseContext(), CrudAcademico.class);
+                        startActivity(crudAcademico);
                     break;
                 }
             }
