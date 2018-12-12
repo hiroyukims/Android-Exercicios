@@ -11,7 +11,7 @@ import android.widget.Button;
 import android.widget.ListView;
 
 import com.example.nhmatsumoto.exercicios.R;
-import com.example.nhmatsumoto.exercicios.provas.crud.CadastroAluno;
+import com.example.nhmatsumoto.exercicios.provas.crud.FormularioAluno;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -47,7 +47,7 @@ public class CrudAcademico extends AppCompatActivity {
         btnMenuNovoAluno.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent cadastroAluno = new Intent(getBaseContext(), CadastroAluno.class);
+                Intent cadastroAluno = new Intent(getBaseContext(), FormularioAluno.class);
                 startActivity(cadastroAluno);
             }
         });
