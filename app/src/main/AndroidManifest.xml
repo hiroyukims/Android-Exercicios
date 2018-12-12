@@ -27,7 +27,8 @@
         <activity android:name=".provas.GeniusAluno" />
         <activity android:name=".provas.GeniusRanking" />
         <activity android:name=".extras.Camera" />
-        <activity android:name=".provas.CrudAcademico"></activity>
+        <activity android:name=".provas.CrudAcademico" />
+        <activity android:name=".provas.crud.CadastroAluno" />
     </application>
 
 </manifest>
